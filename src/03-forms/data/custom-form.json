@@ -1,0 +1,98 @@
+[
+	{
+		"type": "input",
+		"name": "firstName",
+		"placeholder": "Diego",
+		"label": "First Name",
+		"value": "",
+		"validations": [
+			{
+				"type": "required",
+				"message": "This field is required"
+			},
+			{
+				"type": "minLength",
+				"value": 5,
+				"message": "This field must have at least 5 characters"
+			},
+			{
+				"type": "maxLength",
+				"value": 10,
+				"message": "This field must have at most 10 characters"	
+			}
+		]
+	},
+	{
+		"type": "input",
+		"name": "lastName",
+		"placeholder": "Monsalve",
+		"label": "Last Name",
+		"value": "",
+		"validations": [
+			{
+				"type": "required",
+				"message": "This field is required"
+			},
+			{
+				"type": "minLength",
+				"value": 5,
+				"message": "This field must have at least 5 characters"
+			},
+			{
+				"type": "maxLength",
+				"value": 10,
+				"message": "This field must have at most 10 characters"	
+			}
+		]
+	},
+	{
+		"type": "email",
+		"name": "email",
+		"placeholder": "correo@correo.com",
+		"label": "Email",
+		"value": "",
+		"validations": [
+			{
+				"type": "required",
+				"message": "This field is required"
+			},
+			{
+				"type": "email",
+				"message": "Check email format"
+			},
+			{
+				"type": "maxLength",
+				"value": 10,
+				"message": "This field must have at most 10 characters"	
+			}
+		]
+	},
+	{
+		"type": "select",
+		"name": "favoriteGame",
+		"label": "Favorite Game",
+		"value": "",
+		"options": [
+			{ "id":1, "label":"Super Smash" }, 
+			{ "id":2, "label":"Mario Kart" }, 
+			{	"id":3, "label":"Super Mario Bros"}, 
+			{	"id":4, "label":"Zelda" }
+		],
+		"validations": [
+			{
+				"type": "required",
+				"message": "This field is required"
+			},
+			{
+				"type": "minLength",
+				"value": 5,
+				"message": "This field must have at least 5 characters"
+			},
+			{
+				"type": "maxLength",
+				"value": 10,
+				"message": "This field must have at most 10 characters"	
+			}
+		]
+	}
+]
